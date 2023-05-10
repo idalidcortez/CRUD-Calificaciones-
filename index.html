@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title> 
+	<link rel="stylesheet" href="css/calificaciones.css">
+
+</head>
+
+<figure class="text-center"> <h1>Calificaciones UGC Preparatoria</h1><h2>Sexto Semestre</h2> 
+
+<body>
+
+<?php
+include 'connect.php';
+$conn = OpenCon();
+echo "Connected Successfully";
+CloseCon($conn);
+?>
+
+	<form action = "" method = "post">
+		id
+		<input type= "text" name= "id" value= "">
+		<br> 
+		name
+		<input type= "text" name= "name" value= "">
+		<br> 
+		last name 
+		<input type= "text" name= "last_name" value= ""> 
+		<br> 
+		P1
+		<input type= "number" name= "P1" value= "">
+		<br> 
+		P2
+		<input type= "number" name= "P2" value= "">
+		<br> 
+		P3
+		<input type= "number" name= "P3" value= "">
+		<br> 
+		final 
+		<input type= "number" name= "final" value= "">
+		<br> 
+        <button type="submit" name="submit">Submit</button>
+	  </form>
+     </body> 
+    </html> 
